@@ -31,12 +31,8 @@ switch(colors){
         console.log("you still alive, congrats!");
   }
 
-  // functions (- _ -)
-let arr =[1,2,3,4,5,6,7,8,9]
-  function reverseArr(array) {
-    for (let i = array.lenth -1; i >=0; i--) {
-console.log(array[i]);      
-    }
-  }
-
-  reverseArr(arr)
+function salomlashish(name) {
+  console.log("Hello " + name +":)");
+}
+let name="enter your name......"
+salomlashish(name)
