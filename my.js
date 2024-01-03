@@ -34,5 +34,20 @@ switch(colors){
 function salomlashish(name) {
   console.log("Hello " + name +":)");
 }
-let name="enter your name......"
+let name=prompt("enter your name......")
 salomlashish(name)
+
+function findAverage(array) {
+  let x = 0;
+  if (array.length === 0) {
+    return 0;
+  } else {
+    for (let i = 0; i < array.length; i++) {
+      x += array[i];
+    }
+    return x / array.length;
+  }
+}
+
+let array = [1, 2, 3, 4, 5];
+console.log(findAverage(array));
