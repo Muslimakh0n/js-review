@@ -51,3 +51,16 @@ function findAverage(array) {
 
 let array = [1, 2, 3, 4, 5];
 console.log(findAverage(array));
+
+
+function removeLastEl(str){
+  if (((str.length)-1)==="!") {
+    return str.slice(0,1)
+  }else{
+    return str
+  }
+}
+
+console.log(removeLastEl("Hello!"));
+
+// solve it, it's not working
