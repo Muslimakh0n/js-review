@@ -77,9 +77,26 @@ console.log(removeLastEl("Good Luck!"));
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
+  const span = document.querySelector("span")
+  let pat = /^[a-zA-Z]{6,}$/
 
   form.addEventListener("submit", e => {
     e.preventDefault();
-    console.log(e.target.email.value); 
+    let inputVal = e.target.email.value 
+    if (pat.test(inputVal)) {
+      span.textContent="you're welcome"
+    }else{
+      span.textContent="username should be more than 6 characters"
+    }
   });
 });
+
+
+let username = "Gulijon"
+let pattern = /^[a-z]{2,}$/
+// let result = pattern.test(username)
+// console.log(result); //false
+
+let output = username.search(pattern)
+
+console.log(output); // -1
