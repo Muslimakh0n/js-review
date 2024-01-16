@@ -31,11 +31,11 @@ switch(colors){
         console.log("you still alive, congrats!");
   }
 
-function salomlashish(name) {
-  console.log("Hello " + name +":)");
-}
-let name=prompt("enter your name......")
-salomlashish(name)
+// function salomlashish(name) {
+//   console.log("Hello " + name +":)");
+// }
+// let name=prompt("enter your name......")
+// salomlashish(name)
 
 function findAverage(array) {
   let x = 0;
@@ -73,4 +73,13 @@ function removeLastEl(str) {
   }
 }
 
-console.log(removeLastEl("Hello!"));
+console.log(removeLastEl("Good Luck!"));
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    console.log(e.target.email.value); 
+  });
+});
