@@ -100,3 +100,25 @@ let pattern = /^[a-z]{2,}$/
 let output = username.search(pattern)
 
 console.log(output); // -1
+
+
+const buttons = document.querySelectorAll("button")
+const freeSpace = document.querySelector("#freeSpace")
+
+let arr = Array.form(buttons);
+
+arr.map((item) =>{
+  item.addEventListener('click', e =>{
+    let val = e.target.textContent;
+
+    switch (val) {
+      case 'C':
+        
+       return
+    
+      default:
+        freeSpace.textContent += val 
+        break;
+    }
+  })
+})
