@@ -122,3 +122,6 @@ arr.map((item) =>{
     }
   })
 })
+ 
+
+// print("Hello, World!")  this is python
